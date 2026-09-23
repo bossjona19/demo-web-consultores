@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 import { consultora } from '../site';
 
 const enlaces = [
   { href: '#metodo', texto: 'Cómo trabajo' },
   { href: '#servicios', texto: 'Servicios' },
   { href: '#testimonios', texto: 'Resultados' },
-  { href: '#agenda', texto: 'Agenda' },
+  { href: '#proceso', texto: 'El proceso' },
 ];
 
 export function Header() {
@@ -35,9 +36,9 @@ export function Header() {
           ))}
         </nav>
 
-        <a href="#agenda" className="btn-primary px-5 py-2.5">
+        <Link to="/diagnostico" className="btn-primary px-5 py-2.5">
           Agendar llamada
-        </a>
+        </Link>
       </div>
     </header>
   );

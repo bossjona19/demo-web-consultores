@@ -1,4 +1,5 @@
 import { ArrowRight, MapPin } from 'lucide-react';
+import { Link } from 'react-router';
 import { Reveal } from './Reveal';
 import { consultora } from '../site';
 
@@ -22,10 +23,10 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#agenda" className="btn-primary">
+            <Link to="/diagnostico" className="btn-primary">
               Agendar llamada de 30 minutos
               <ArrowRight className="size-4" aria-hidden />
-            </a>
+            </Link>
             <a href="#servicios" className="btn-ghost">
               Ver servicios
             </a>

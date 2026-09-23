@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
 import { servicios } from '../site';
@@ -38,9 +39,9 @@ export function Servicios() {
                   ))}
                 </ul>
 
-                <a href="#agenda" className={`mt-7 w-full ${s.destacado ? 'btn-primary' : 'btn-ghost'}`}>
+                <Link to="/diagnostico" className={`mt-7 w-full ${s.destacado ? 'btn-primary' : 'btn-ghost'}`}>
                   Hablemos de esto
-                </a>
+                </Link>
               </article>
             </Reveal>
           ))}

@@ -1,29 +1,20 @@
-import { Agenda } from './components/Agenda';
+import { Analytics } from '@vercel/analytics/react';
+import { BrowserRouter, Route, Routes } from 'react-router';
 import { AvisoDemo } from './components/AvisoDemo';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Metodo } from './components/Metodo';
-import { Problema } from './components/Problema';
-import { Proceso } from './components/Proceso';
-import { Servicios } from './components/Servicios';
-import { Testimonios } from './components/Testimonios';
+import { BotonWhatsApp } from './components/BotonWhatsApp';
+import { Inicio } from './pages/Inicio';
+import { Diagnostico } from './pages/Diagnostico';
 
 export function App() {
   return (
-    <>
+    <BrowserRouter>
       <AvisoDemo />
-      <Header />
-      <main>
-        <Hero />
-        <Problema />
-        <Metodo />
-        <Servicios />
-        <Testimonios />
-        <Proceso />
-        <Agenda />
-      </main>
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/diagnostico" element={<Diagnostico />} />
+      </Routes>
+      <BotonWhatsApp />
+      <Analytics />
+    </BrowserRouter>
   );
 }
