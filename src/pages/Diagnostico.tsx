@@ -23,11 +23,12 @@ export function Diagnostico() {
 
       <main className="container-page py-14 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <h1 className="font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-            Agenda tu diagnóstico gratuito de 30 minutos
+          <h1 className="font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+            Tu diagnóstico, gratis
           </h1>
           <p className="mt-4 text-lg text-muted text-pretty">
-            Me cuentas cómo trabajan hoy, te digo qué arreglaría primero y con qué orden. Sales con un plan, contrates o no.
+            30 minutos por videollamada. Me cuentas cómo trabajan hoy, te digo qué arreglaría primero y con qué orden. Sales
+            con un plan, contrates o no.
           </p>
 
           <ul className="mt-6 flex flex-wrap justify-center gap-x-7 gap-y-2 text-sm text-muted">
