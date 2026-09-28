@@ -42,7 +42,7 @@ export function Diagnostico() {
         </div>
 
         <div className="mx-auto mt-10 max-w-2xl">
-          <Agenda variante="pagina" />
+          <Agenda />
 
           <figure className="mt-8 rounded-2xl border border-line bg-accent-soft/40 p-6">
             <blockquote className="text-pretty">“{testimonio.texto}”</blockquote>

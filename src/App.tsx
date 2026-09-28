@@ -4,6 +4,7 @@ import { AvisoDemo } from './components/AvisoDemo';
 import { BotonWhatsApp } from './components/BotonWhatsApp';
 import { Inicio } from './pages/Inicio';
 import { Diagnostico } from './pages/Diagnostico';
+import { Panel } from './pages/Panel';
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/diagnostico" element={<Diagnostico />} />
+        <Route path="/panel" element={<Panel />} />
       </Routes>
       <BotonWhatsApp />
       <Analytics />
