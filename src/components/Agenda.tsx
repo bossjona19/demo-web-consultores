@@ -99,9 +99,10 @@ export function Agenda() {
   return (
     <div className="card">
       <form onSubmit={enviar}>
-        <fieldset>
+        <fieldset className="min-w-0">
           <legend className="label">1. Elige el día</legend>
-          <div ref={tira} className="-mx-1 flex snap-x gap-2 overflow-x-auto px-1 pb-2">
+          {/* max-w-full evita que los 30 días estiren la tarjeta en vez de desplazarse dentro */}
+          <div ref={tira} className="-mx-1 flex max-w-full snap-x gap-2 overflow-x-auto px-1 pb-2">
             {dias.map((d) => (
               <BotonDia
                 key={d.fecha}
