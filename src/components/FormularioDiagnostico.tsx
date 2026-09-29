@@ -184,7 +184,8 @@ export function FormularioDiagnostico() {
                 aria-label={`${t.rango}${t.estado !== 'libre' ? ' — Ocupada' : ''}`}
                 onClick={() => setHora(t.hora)}
               >
-                {t.rango}
+                {/* Solo la hora de inicio: el rango completo va en la confirmación. */}
+                {t.hora}
                 {t.estado === 'ocupado' && <span className="hour-btn-busy-tag">Ocupada</span>}
                 {t.estado === 'cerrado' && <span className="hour-btn-busy-tag">Cerrada</span>}
               </button>

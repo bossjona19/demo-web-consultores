@@ -26,7 +26,8 @@ export type Horario = {
   cierres: string[];
   /** Horas sueltas que el consultor abre fuera de su franja: "2026-10-04 18:00". */
   extras: string[];
-  /** Minutos que dura cada llamada. */
+  /** Minutos que dura cada llamada. Una hora por defecto: de hora en hora
+   *  salen la mitad de botones y la pantalla se lee mucho mejor. */
   duracion: number;
 };
 
@@ -45,7 +46,7 @@ const POR_DEFECTO: Horario = {
   },
   cierres: [],
   extras: [],
-  duracion: 30,
+  duracion: 60,
 };
 
 export function leerHorario(): Horario {
