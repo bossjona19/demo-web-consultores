@@ -6,7 +6,7 @@
  * aquí se guarda en el navegador para que la demo funcione sin servidor.
  */
 
-import { leerHorario, rango, turnosDelDia, type Horario } from './horarios';
+import { leerHorario, rango, turnosDelDia } from './horarios';
 
 const CLAVE = 'demo-consultor:reservas';
 
@@ -63,7 +63,7 @@ function guardarReservas(reservas: Reserva[]) {
 }
 
 /** Los turnos de una fecha con su estado. Incluye los cerrados: verlos da confianza. */
-export function turnosDe(fecha: string, horario: Horario, reservas: Reserva[]): Turno[] {
+export function turnosDe(fecha: string, horario = leerHorario(), reservas = leerReservas()): Turno[] {
   const delDia = reservas.filter((r) => r.fecha === fecha);
   const abiertos = turnosDelDia(fecha, horario);
 

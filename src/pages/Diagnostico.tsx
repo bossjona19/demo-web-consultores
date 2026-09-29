@@ -1,6 +1,6 @@
 import { ArrowLeft, Clock, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router';
-import { Agenda } from '../components/Agenda';
+import { FormularioDiagnostico } from '../components/FormularioDiagnostico';
 import { consultora, testimonios } from '../site';
 
 /**
@@ -42,7 +42,7 @@ export function Diagnostico() {
         </div>
 
         <div className="mx-auto mt-10 max-w-2xl">
-          <Agenda />
+          <FormularioDiagnostico />
 
           <figure className="mt-8 rounded-2xl border border-line bg-accent-soft/40 p-6">
             <blockquote className="text-pretty">“{testimonio.texto}”</blockquote>
